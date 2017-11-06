@@ -10,15 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	// MARK: - View Did Load
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
-	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
+		//makes keyboard come up on app launch or viewDidLoad. 
+		textView.becomeFirstResponder()
+		}
+	
+	// MARK: - Outlets
+	@IBOutlet weak var textView: UITextView!
+	
+	
+	
+	
 
 
 }
